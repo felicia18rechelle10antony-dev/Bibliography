@@ -1,0 +1,362 @@
+<html>
+<head>
+    <title>Edna's Favourite Food & Place</title>
+    <link rel="icon" type="image/png" href="corgi.png">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>⋆.𐙚 Edna's Personal Website ⋆.𐙚</h1>
+        <p>Welcome to Edna's little world!</p>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="edna's bio.html">Home</a>
+        <a href="edna's biodata.html">Biodata</a>
+        <a href="edna's family.html">Family</a>
+        <a href="edna's education.html">Education</a>
+        <a href="edna's friends.html">Friends</a>
+        <a href="edna's favourites.html">Favourite Food & Place</a>
+        <a href="edna's gallery.html">Gallery</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="home-content">
+
+    <style>
+        /* GALLERY INTRODUCTION */
+        .gallery-intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .gallery-intro p {
+            line-height: 1.8;
+        }
+
+        /* GALLERY SECTIONS */
+        .gallery-section {
+            margin: 30px 0;
+        }
+
+        .gallery-section > p {
+            line-height: 1.8;
+        }
+
+        /* GALLERY GRID */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        /* GALLERY CARD */
+        .gallery-card {
+            background-color: #EAF6FF;
+            border: 2px solid #B0E0E6;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 10px #CADDE8;
+            transition: transform 0.3s;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* GALLERY IMAGE */
+        .gallery-card img {
+            display: block;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        /* IMAGE CAPTION */
+        .gallery-caption {
+            padding: 15px;
+        }
+
+        .gallery-caption h3 {
+            color: #285B7A;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .gallery-caption p {
+            color: #456781;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* CHILDHOOD PHOTO LAYOUT */
+        .childhood-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        /* CLOSING MESSAGE */
+        .gallery-message {
+            background-color: #EAF6FF;
+            border-left: 5px solid #7FB9D3;
+            padding: 20px;
+            border-radius: 10px;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        /* TABLET */
+        @media screen and (max-width: 800px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        /* MOBILE */
+        @media screen and (max-width: 550px) {
+            .gallery-grid,
+            .childhood-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-card img {
+                height: 260px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MAIN CONTENT -->
+    <main class="home-content">
+
+        <!-- INTRODUCTION -->
+        <div class="gallery-intro">
+            <h2>My Photo Gallery ♡</h2>
+
+            <p>
+                Welcome to my little photo gallery!
+                This page is a collection of pictures from
+                different stages of my life, from my childhood
+                memories to my high school days and the person
+                I am today. Every picture tells a story and
+                reminds me of how much I have grown.
+                These memories will always have a special
+                place in my heart. 𐙚
+            </p>
+        </div>
+
+        <hr>
+
+        <!-- SECTION 1: CHILDHOOD -->
+        <section class="gallery-section">
+            <h2>01. My Childhood Memories 𐙚</h2>
+
+            <p>
+                Childhood was a beautiful part of my life filled
+                with innocence, happiness, and unforgettable
+                moments. Looking at these pictures reminds me
+                of my younger self and the precious memories
+                that I will always treasure.
+            </p>
+
+            <div class="childhood-grid">
+
+                <!-- CHILDHOOD PHOTO 1 -->
+                <div class="gallery-card">
+                    <img src="childhood1.jpeg"
+                         alt="Edna's first childhood picture">
+
+                    <div class="gallery-caption">
+                        <h3>Little Me ♡</h3>
+                        <p>
+                            A little glimpse of my younger self
+                            and the beautiful memories of childhood.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CHILDHOOD PHOTO 2 -->
+                <div class="gallery-card">
+                    <img src="childhood2.jpeg"
+                         alt="Edna's second childhood picture">
+
+                    <div class="gallery-caption">
+                        <h3>Sweet Childhood ✧</h3>
+                        <p>
+                            A precious memory from the early
+                            years of my life that I will always cherish.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 2: HIGH SCHOOL -->
+        <section class="gallery-section">
+            <h2>02. My High School Memories ♡</h2>
+
+            <p>
+                My high school years were filled with learning,
+                friendship, laughter, and new experiences.
+                These pictures remind me of the people I met,
+                the moments we shared, and the memories that
+                made this chapter of my life meaningful.
+            </p>
+
+            <div class="gallery-grid">
+
+                <!-- HIGH SCHOOL PHOTO 1 -->
+                <div class="gallery-card">
+                    <img src="highschool1.jpeg"
+                         alt="Edna's first high school picture">
+
+                    <div class="gallery-caption">
+                        <h3>School Days 𐙚</h3>
+                        <p>
+                            A memorable moment from my high
+                            school journey.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- HIGH SCHOOL PHOTO 2 -->
+                <div class="gallery-card">
+                    <img src="highschool2.jpg"
+                         alt="Edna's second high school picture">
+
+                    <div class="gallery-caption">
+                        <h3>Memories with Friends ♡</h3>
+                        <p>
+                            The people and moments that made
+                            my school days more special.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- HIGH SCHOOL PHOTO 3 -->
+                <div class="gallery-card">
+                    <img src="highschool3.jpg"
+                         alt="Edna's third high school picture">
+
+                    <div class="gallery-caption">
+                        <h3>A Chapter to Remember ✧</h3>
+                        <p>
+                            A beautiful memory from a chapter
+                            of my life that helped me grow.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 3: PRESENT DAY -->
+        <section class="gallery-section">
+            <h2>03. My Pictures Now ♡</h2>
+
+            <p>
+                These pictures show a little part of who I am
+                today. As I grow older, I continue to discover
+                new things about myself, create new memories,
+                and look forward to the experiences waiting
+                for me in the future.
+            </p>
+
+            <div class="gallery-grid">
+
+                <!-- CURRENT PHOTO 1 -->
+                <div class="gallery-card">
+                    <img src="now1.jpeg"
+                         alt="Edna's first recent picture">
+
+                    <div class="gallery-caption">
+                        <h3>Present Me ♡</h3>
+                        <p>
+                            A picture of who I am today and
+                            the person I continue to become.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CURRENT PHOTO 2 -->
+                <div class="gallery-card">
+                    <img src="now2.jpeg"
+                         alt="Edna's second recent picture">
+
+                    <div class="gallery-caption">
+                        <h3>Little Moments 𐙚</h3>
+                        <p>
+                            Enjoying the present and appreciating
+                            the little things in life.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CURRENT PHOTO 3 -->
+                <div class="gallery-card">
+                    <img src="now3.jpeg"
+                         alt="Edna's third recent picture">
+
+                    <div class="gallery-caption">
+                        <h3>My Journey Continues ✧</h3>
+                        <p>
+                            Growing, learning, and creating
+                            more beautiful memories along the way.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- CLOSING MESSAGE -->
+        <h2>From Little Me to Who I Am Today ♡</h2>
+
+        <div class="gallery-message">
+            <p>
+                Looking back at these pictures reminds me
+                of how much I have grown and how every stage
+                of life has shaped the person I am today.
+                My childhood taught me to appreciate the
+                simple things, my high school years gave me
+                meaningful experiences, and my present life
+                continues to teach me new lessons.
+            </p>
+
+            <p>
+                I know there are still many beautiful moments
+                waiting for me. No matter how much time passes,
+                I will always treasure the memories that have
+                brought me to where I am today. 𐙚
+            </p>
+
+            <h3>♡ Every Picture Tells a Story ♡</h3>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Made by Felicia 𖹭</p>
+    </footer>
+
+</body>
+</html>
